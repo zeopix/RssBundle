@@ -24,7 +24,8 @@ Usage
 Now, you have a service called "iga_rss.rss" that loads the rss_php class.
 Code sample in a controller:
 
-            $rss = $this->get('iga_rss.rss')->load('http://www.elpais.com/rss/feed.html?feedId=1022');
+            $rss = $this->get('iga_rss.rss');
+            $rss->load('http://www.elpais.com/rss/feed.html?feedId=1022');
             $items = $rss->getItems();
        
 
