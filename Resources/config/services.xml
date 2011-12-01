@@ -9,10 +9,10 @@
     </parameters>
 
     <services>
-    
-        <service id="iga_rss.rss" class="%iga_rss.rss.class%">
+
+        <service id="iga_rss.rss" class="%iga_rss.rss.class%" scope="prototype">
             <file>%iga_rss.file%</file>
         </service>
-        
+
     </services>
 </container>
